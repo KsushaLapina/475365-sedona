@@ -7,16 +7,108 @@
   <body>
       <header class="main-header">
           <nav class="main-navigation">
-                <ul class="site-navigation">
+              <a class="main-header logo" href="index.html">
+                  <img src="http://placehold.it" width="150" height="100" alt="Логотип Седона">
+              </a>
+              <ul class="site-navigation">
                   <li><a href="info.html">Информация</a></li>
                   <li><a href="foto.html">Фото и Видео</a></li>
-                  <li><a href="main-logo.html"><img src="img/index-logo.svg" width="200" height="200" alt="Логотип Седона"></a></li>
                   <li><a href="map.html">Карта штата</a></li>
-                  <li><a href="hotel.html">Гостиница</a></li>
-                </ul>
-           </nav>
-      </header>
+                  <li><a href="hotel.html" class="site-navigation current">Гостиница</a></li>
+              </ul>
+            </nav>
+         </header>
 
+           <main class="container">
+              <h1 class="visiual-hidden ">Выбор гостиницы</h1>
+              <section class="filters">
+                  <h2 class="visiul-hidden">Фильтер товаров</h2>
+               <!--Здесь будет форма-->
+              </section>
 
+              <section class="result">
+                  <b class="result-title">Найдено:</b>
+                  <span class="result-number">3</span>
+              </section>
+
+              <section class="sorting">
+                  <p class="sorting-title">Сортировка:</p>
+                      <ul class="sorting-list">
+                          <li class="sorting-list item"><a href="price.html">По цене</a></li>
+                          <li class="sorting-list item"><a href="type.html">По типу</a></li>
+                          <li class="sorting-list item"><a href="popular.html">По рейтингу</a></li>
+                      </ul>
+             </section>
+
+             <section class="hotels">
+                <h2 class="visiul-hidden">Найденные отели</h2>
+                    <ul class="hotels-catalog">
+                        <li class="hotel-item">
+                            <h3>
+                                <a href="hotel-item.html">Amara Resort & Spa</a>
+                            </h3>
+                            <p class="hotels-catalog img">
+                                <a href="hotels-item.html">
+                                    <img src="http://placehold.it" width="150" height="100" alt="Amara Resort & Spa">
+                                </a>
+                            </p>
+                            <p class="hotels-item kind">Гостиница</p>
+                            <p class="hotels-item price">от 4000р</p>
+                            <p class="hotels-popular">рейтинг:8,5</p>
+                            <a class="button" href="details.html">подробнее</a>
+                            <button class="reservation">Забронировать</button>
+                        </li>
+
+                        <li class="hotel-item">
+                            <h3>
+                                <a href="hotel-item.html">Desert Quail Inn</a>
+                            </h3>
+                            <p class="hotels-catalog img">
+                                <a href="hotels-item.html">
+                                    <img src="http://placehold.it" width="150" height="100" alt="Desert Quail Inn">
+                                </a>
+                            </p>
+                            <p class="hotels-item kind">Мотель</p>
+                            <p class="hotels-item price">от 3000р</p>
+                            <p class="hotels-popular">рейтинг:8,9</p>
+                            <a class="button" href="details.html">подробнее</a>
+                            <button class="reservation">Забронировать</button>
+                        </li>
+
+                        <li class="hotel-item">
+                            <h3>
+                                <a href="hotel-item.html">Villas at Poco Diablo</a>
+                            </h3>
+                            <p class="hotels-catalog img">
+                                <a href="hotels-item.html">
+                                    <img src="http://placehold.it" width="150" height="100" alt="Villas at Poco Diablo">
+                                </a>
+                            </p>
+                            <p class="hotels-item kind">Аппартаменты</p>
+                            <p class="hotels-item price">от 2000р</p>
+                            <p class="hotels-popular">рейтинг: 9,2</p>
+                            <a class="button" href="details.html">подробнее</a>
+                            <button class="reservation">Забронировать</button>
+                        </li>
+                    </ul>
+             </section>
+           </main>
+
+      <footer class="main-footer">
+        <section class="main-footer info">
+          <p class="hashtag">#visitsedona</p>
+        </section>
+          <div class="social-media">
+              <ul>
+                  <li><a href="twitter.com" class="social-media button">Twitter</a></li>
+                  <li><a href="facebook.com" class="social-media button">Facebook</a></li>
+                  <li><a href="youtube.com" class="social-media button">youtube</a></li>
+              </ul>
+          </div>
+          <section class="copyright">
+            <p class="copyright-text">Website by</p>
+            <a class="copyright-logo" href="//htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+          </section>
+      </footer>
   </body>
 </html>
