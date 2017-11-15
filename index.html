@@ -89,7 +89,23 @@
 
               <section class="search">
                   <h2 class="search-title">Поиск гостиницы в Седоне</h2>
-                   <!--Здесь будет форма-->
+                   <form class="finder" method="post" action="https://echo.htmlacademy.ru">
+                     <p>
+                       <label for="finder-arrival">Дата заезда:</label>
+                       <input id="finder-arrival" type="date" name="arrival" >
+                     </p>
+                     <p>
+                       <label for="finder-departure">Дата выезда:</label>
+                       <input id="finder-departure" type="date" name="departure" >
+                     </p>
+                     <p>
+                       <label for="finder-adults">Взрослые:</label>
+                       <input id="finder-adults" type="number" name="adults" min="1" max="20" step="1">
+                       <label for="finder-kids">Дети:</label>
+                       <input id="finder-kids" type="number" name="kids" min="0" max="20" step="1">
+                     </p>
+                     <button type="submit">Найти</button>
+                   </form>
               </section>
 
               <div class="map">
