@@ -1,0 +1,185 @@
+body {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    background-image: url("img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000
+}
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:focus {
+  color: rgba (0 0 0 0.3);
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+.welcome img {
+  background-position: top center;
+}
+.promotion {
+  text-align: center;
+}
+.promotion-slogan {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.promotion-text {
+  font-size: 14px;
+  line-height: 26px;
+}
+.feature-one {
+  color: #ffffff;
+
+  background-color: #81b3d2
+}
+.feature-one h3{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.recomindation-list {
+  list-style: none;
+}
+.recomindation-item {
+  text-align: center;
+}
+.recomindation-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.feature-two {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+.feature-two h3{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.another-features {
+  background-color: #eeeeee;
+}
+.another-features h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.booking {
+  text-align: center;
+}
+.booking h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+.booking-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+.search-title a {
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+}
+.search-title a:hover {
+  background-color: #604e43;
+}
+.search-title a:focus {
+  background-color: #503e33;
+  color: rgba (255 255 255 0.3);
+}
+label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.search-item input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+.search-item input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #81b3d2;
+  border: 2px solid #f2f2f2;
+}
+.button:hover {
+  background-color: #669ec0;
+}
+.button:focus {
+  background-color: #5496bd;
+  color: rgba(255 255 255 0.3);
+}
+
+.main-footer {
+  background-color: rgba (255 255 255 0.9);
+}
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.social-media {
+  text-align: center;
+}
+.social-media ul {
+  list-style: none;
+}
+.social-button {
+  color: #000000;
+}
+.copyright {
+  text-align: center;
+}
+.copyright-logo {
+  color: #000000;
+}
+.copyright-logo:hover {
+  color: #81b3d2;
+}
+.copyright-logo:focus {
+  color: #bdbbbc;
+}

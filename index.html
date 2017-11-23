@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header class="main-header">
@@ -21,8 +24,7 @@
 
       <main class="container">
           <section class="welcome">
-              <img class="ground" src="http://placehold.it" width="150" height="100" alt="Седона">
-              <img class="picture-sedone" src="http://placehold.it" width="150" height="100" alt="Приветствие">
+              <img class="picture-sedone" src="img/phrases.png" width="458" height="352" alt="Приветствие">
           </section>
 
           <section class="promotion">
@@ -36,9 +38,9 @@
                 <aside class="house">
                   <img src="img/house.jpg" width="800" height="256" alt="Милый домик">
                 </aside>
-                  <h3 class="feature-one title">Настоящий городок</h3>
+                  <h3 class="feature-one-title">Настоящий городок</h3>
                   <span class="feature-one number">№1</span>
-                  <p class="feature-one text">Седона-не атракцион для туристов, там течет своя жизнь</p>
+                  <p class="feature-one-text">Седона-не атракцион для туристов, там течет своя жизнь</p>
             </section>
 
               <section class="recomindations">
@@ -83,45 +85,47 @@
               </section>
 
                 <section class="booking">
-                  <h2 class="booking-title">Заинтересовались</h2>
+                  <h2 class="booking-title">Заинтересовались?</h2>
                   <p class="booking-text">укажите преполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </section>
 
               <section class="search">
-                  <h2 class="search-title">Поиск гостиницы в Седоне</h2>
+                  <p class="search-title">
+                    <a href="search.html">Поиск гостиницы в Седоне</a>
+                  </p>
                    <form class="finder" method="post" action="https://echo.htmlacademy.ru">
-                     <p>
+                     <p class="search-item">
                        <label for="finder-arrival">Дата заезда:</label>
                        <input id="finder-arrival" type="date" name="arrival" >
                      </p>
-                     <p>
+                     <p class="search-item">
                        <label for="finder-departure">Дата выезда:</label>
                        <input id="finder-departure" type="date" name="departure" >
                      </p>
-                     <p>
+                     <p class="search-item">
                        <label for="finder-adults">Взрослые:</label>
                        <input id="finder-adults" type="number" name="adults" min="1" max="20" step="1">
                        <label for="finder-kids">Дети:</label>
                        <input id="finder-kids" type="number" name="kids" min="0" max="20" step="1">
                      </p>
-                     <button type="submit">Найти</button>
+                     <button class="button" type="submit">Найти</button>
                    </form>
               </section>
-
-              <div class="map">
-                <img src="img/map.jpg" width="1203" height="473" alt="Карта Седоны">
-              </div>
           </main>
 
                 <footer class="main-footer">
+                  <section class="map">
+                    <h2 class="visually-hidden">Седона на карте</h2>
+                    <img src="img/map.jpg" width="1200" height="594" alt="Карта Седоны">
+                  </section>
                   <section class="main-footer info">
                     <p class="hashtag">#visitsedona</p>
                   </section>
                     <div class="social-media">
                         <ul>
-                            <li><a href="twitter.com" class="social-media button">Twitter</a></li>
-                            <li><a href="facebook.com" class="social-media button">Facebook</a></li>
-                            <li><a href="youtube.com" class="social-media button">youtube</a></li>
+                            <li><a href="twitter.com" class="social-button">Twitter</a></li>
+                            <li><a href="facebook.com" class="social-button">Facebook</a></li>
+                            <li><a href="youtube.com" class="social-button">youtube</a></li>
                         </ul>
                     </div>
                     <section class="copyright">
@@ -129,5 +133,6 @@
                       <a class="copyright-logo" href="//htmlacademy.ru/intensive/htmlcss">Html Academy</a>
                     </section>
                 </footer>
+
   </body>
 </html>
