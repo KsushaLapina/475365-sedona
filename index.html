@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -90,24 +90,42 @@
                   <p class="search-title">
                     <a href="search.html">Поиск гостиницы в Седоне</a>
                   </p>
+              </section>
                    <form class="finder" method="post" action="https://echo.htmlacademy.ru">
                      <p class="search-item">
                        <label for="finder-arrival">Дата заезда:</label>
                        <input id="finder-arrival" type="date" name="arrival" >
+                       <button class="form-calendar" type="button">
+                         <span class="visually-hidden">Календарь</span>
+                       </button>
                      </p>
                      <p class="search-item">
                        <label for="finder-departure">Дата выезда:</label>
-                       <input id="finder-departure" type="date" name="departure" >
+                       <input id="finder-departure" type="date" name="departure">
+                       <button class="form-calendar" type="button">
+                         <span class="visually-hidden">Календарь</span>
+                       </button>
                      </p>
                      <p class="search-item">
                        <label for="finder-adults">Взрослые:</label>
+                       <button class="icon-plus" type="button">
+                         <span class="visually-hidden">Плюс</span>
+                       </button>
                        <input id="finder-adults" type="number" name="adults" min="1" max="20" step="1">
+                       <button class="icon-minus" type="button">
+                         <span class="visually-hidden">Минус</span>
+                       </button>
                        <label for="finder-kids">Дети:</label>
+                       <button class="icon-plus" type="button">
+                         <span class="visually-hidden">Плюс</span>
+                       </button>
                        <input id="finder-kids" type="number" name="kids" min="0" max="20" step="1">
+                       <button class="icon-minus" type="button">
+                         <span class="visually-hidden">Минус</span>
+                       </button>
                      </p>
                      <button class="button" type="submit">Найти</button>
                    </form>
-              </section>
           </main>
 
                 <footer class="main-footer">
@@ -117,7 +135,6 @@
                   </section>
                   <section class="main-footer info">
                     <p class="hashtag">#visitsedona</p>
-                  </section>
                     <div class="social-media">
                         <ul>
                             <li><a href="twitter.com" class="social-button">Twitter</a></li>
@@ -125,9 +142,9 @@
                             <li><a href="youtube.com" class="social-button">youtube</a></li>
                         </ul>
                     </div>
-                    <section class="copyright">
-                      <p class="copyright-text">Website by</p>
+                      <p class="copyright-text">Website by
                       <a class="copyright-logo" href="//htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+                      </p>
                     </section>
                 </footer>
 
