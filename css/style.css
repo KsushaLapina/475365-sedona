@@ -9,7 +9,7 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  background-image: url("phrases.png"), url("bg.jpg");
+  background-image: url("/img/phrases.png"), url("/img/bg.jpg");
   background-position: top center, top center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto, auto auto;
@@ -22,6 +22,7 @@ body {
 a {
   text-decoration: none;
 }
+/* шапка */
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -40,15 +41,27 @@ a {
   color: #81b3d2;
 }
 .site-navigation a:focus {
-  color: rgba (0 0 0 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
-
+.site-navigation a:active {
+  color: #766357;
+}
+.site-navigation-current a {
+  color: #766357;
+}
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  color: #766357;
+}
+/*основной контейнер обоих странице*/
 .container {
   background-color: #ffffff;
 }
 
+/* фильтры на странице hotels*/
 .filters {
-    background-image: url("filter background.jpg");
+    background-image: url("/img/filter background.jpg");
     color: #ffffff;
 }
 .filters fieldset {
@@ -75,10 +88,16 @@ a {
   border: 2px solid #ffffff;
   background-color: transparent;
 }
+.filter-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+/*результат фильтров на странице hotels*/
 .result {
   font-size: 21px;
   line-height: 26px;
 }
+/*сортировка по цене, рейтингу и типу на странице hotels*/
 .sorting-list{
   list-style: none;
 }
@@ -95,6 +114,17 @@ a {
   color: #000000;
   border-bottom: none;
 }
+.sorting-item-current a {
+  color: #81b3d2;
+  border-bottom: none;
+}
+.sorting-item-current a:hover,
+.sorting-item-current a:focus,
+.sorting-item-current a:active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+/*каталог найденных отелей на странице hotels*/
 .hotels-catalog {
   list-style: none;
 }
@@ -103,13 +133,14 @@ a {
   line-height: 26px;
 }
 .hotel-item a {
-    color: #000000;
+  color: #000000;
 }
 .hotel-item a:hover {
   color: #81b3d2;
 }
 .hotel-item a:active {
   color: rgba(0, 0, 0, 0.3);
+  font-weight: normal;
 }
 .hotels-popular {
   font: inherit;
@@ -117,6 +148,7 @@ a {
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
 }
+/*две кнопки на странице hotels подробнее и зарезервивровать*/
 .reservation {
   font-size: 14px;
   line-height: 21px;
@@ -128,26 +160,26 @@ a {
 .reservation:hover {
   background-color: #604e43;
 }
-.reservation:focus {
+.reservation:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
-li .button {
+.hotels-button a {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
 }
-.button:hover {
+.hotels-button a:hover{
   background-color: #669ec0;
   font-weight: bold;
 }
-.button:focus {
+.hotels-button a:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
+/*слоган после фоновой картинки на странице index*/
 .promotion {
   text-align: center;
 }
@@ -160,31 +192,18 @@ li .button {
   font-size: 14px;
   line-height: 26px;
 }
+/*преимущества Седоны страница index*/
 .feature-one {
   color: #ffffff;
 
   background-color: #81b3d2
 }
-.feature-one h3{
+.feature-one h3 {
   font-size: 21px;
   line-height: 21px;
 }
-
-.recomindation-list {
-  list-style: none;
-}
-.recomindation-item {
-  text-align: center;
-}
-.recomindation-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-}
-
 .feature-two {
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 .feature-two h3{
@@ -199,7 +218,19 @@ li .button {
   font-size: 21px;
   line-height: 21px;
 }
-
+/*рекомендации, страница index*/
+.recomindation-list {
+  list-style: none;
+}
+.recomindation-item {
+  text-align: center;
+}
+.recomindation-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+/*форма поиска гостиниц на определенную дату на странице index*/
 .booking {
   text-align: center;
 }
@@ -220,10 +251,11 @@ li .button {
 .search-title a:hover {
   background-color: #604e43;
 }
-.search-title a:focus {
+.search-title a:active {
   background-color: #503e33;
-  color: rgba (255 255 255 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
+
 label {
   font-size: 14px;
   line-height: 26px;
@@ -243,7 +275,26 @@ label {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
+.form-calendar,
+.icon-plus,
+.icon-minus {
+  font: inherit;
+  color: #cacaca;
 
+  background-color: #f2f2f2;
+  border: none;
+}
+.form-calendar:hover,
+.icon-plus:hover,
+.icon-minus:hover {
+  color: #000000;
+}
+.form-calendar:active,
+.icon-plus:active,
+.icon-minus:active {
+  color: #81b3d2;
+}
+/*кнопка Найти на странице index*/
 .button {
   font-size: 21px;
   line-height: 26px;
@@ -256,13 +307,13 @@ label {
 .button:hover {
   background-color: #669ec0;
 }
-.button:focus {
+.button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
+/*подвал, на обоих страницах одинаковый*/
 .main-footer {
-  background-color: rgba (255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .hashtag {
   font-size: 21px;
@@ -276,7 +327,15 @@ label {
   list-style: none;
 }
 .social-button {
-  color: #000000;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.social-button:hover {
+  background-color: #669ec0
+}
+.social-button:active {
+  color: #88b6d1;
+  background-color: #5496bd
 }
 .copyright {
   text-align: center;
@@ -287,6 +346,6 @@ label {
 .copyright-logo:hover {
   color: #81b3d2;
 }
-.copyright-logo:focus {
+.copyright-logo:active {
   color: #bdbbbc;
 }
