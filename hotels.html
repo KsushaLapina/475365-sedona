@@ -5,9 +5,9 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
       <header class="main-header">
           <nav class="main-navigation">
               <a class="main-header logo" href="index.html">
@@ -68,7 +68,7 @@
                      <div class="to">до 3000</div>
                      <input id="range-from-to" type="range" min="0" max="3000" step="1">
                    </div>
-                   <button type="submit">Показать</button>
+                   <button class="filter-button" type="submit">Показать</button>
                  </fieldset>
                </form>
               </section>
@@ -81,11 +81,13 @@
               <section class="sorting">
                     <p class="sorting-title">Сортировка:</p>
                         <ul class="sorting-list">
-                            <li class="sorting-list item"><a href="price.html">По цене</a></li>
-                            <li class="sorting-list item"><a href="type.html">По типу</a></li>
-                            <li class="sorting-list item"><a href="popular.html">По рейтингу</a></li>
+                            <li class="sorting-item"><a href="price.html">По цене</a></li>
+                            <li class="sorting-item"><a href="type.html">По типу</a></li>
+                            <li class="sorting-item"><a href="popular.html">По рейтингу</a></li>
                         </ul>
                </section>
+               <div class="arrow-bottom"></div>
+               <div class="arrow-top"></div>
 
                <section class="hotels">
                   <h2 class="visiul-hidden">Найденные отели</h2>
@@ -101,7 +103,7 @@
                               </p>
                               <p class="hotels-item kind">Гостиница</p>
                               <p class="hotels-item price">от 4000р</p>
-                              <p class="hotels-popular">рейтинг:8,5</p>
+                              <p class="hotels-popular">рейтинг: 8,5</p>
                               <a class="button" href="details.html">подробнее</a>
                               <button class="reservation">Забронировать</button>
                           </li>
@@ -117,7 +119,7 @@
                               </p>
                               <p class="hotels-item kind">Мотель</p>
                               <p class="hotels-item price">от 3000р</p>
-                              <p class="hotels-popular">рейтинг:8,9</p>
+                              <p class="hotels-popular">рейтинг: 8,9</p>
                               <a class="button" href="details.html">подробнее</a>
                               <button class="reservation">Забронировать</button>
                           </li>
@@ -147,15 +149,15 @@
           </section>
             <div class="social-media">
                 <ul>
-                    <li><a href="twitter.com" class="social-media button">Twitter</a></li>
-                    <li><a href="facebook.com" class="social-media button">Facebook</a></li>
-                    <li><a href="youtube.com" class="social-media button">youtube</a></li>
+                    <li><a href="twitter.com" class="social-button">Twitter</a></li>
+                    <li><a href="facebook.com" class="social-button">Facebook</a></li>
+                    <li><a href="youtube.com" class="social-button">youtube</a></li>
                 </ul>
             </div>
-          <section class="copyright">
-            <p class="copyright-text">Website by</p>
-            <a class="copyright-logo" href="//htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-          </section>
+            <section class="copyright">
+              <p class="copyright-text">Website by</p>
+              <a class="copyright-logo" href="//htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+            </section>
         </footer>
 
   </body>
