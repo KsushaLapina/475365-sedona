@@ -242,8 +242,7 @@ a {
 	transform: translate(-50%, -50%);
 }
 .from-to label {
-	display: flex;
-  align-items: baseline;
+	display: inline-block;
 
 	vertical-align: top;
 	font-size: 14px;
@@ -283,8 +282,8 @@ a {
 }
 
 .range-toggle {
-    position: absolute;
-    top: -9px;
+  position: absolute;
+  top: -9px;
 
 	width: 2px;
 	height: 2px;
@@ -308,8 +307,8 @@ a {
     left: 80%;
 }
 
-.filter-button {
-  padding: 8px 35px;
+.filter-from-to button {
+  padding: 5px 35px;
 
   font: inherit;
   text-transform: uppercase;
@@ -323,7 +322,7 @@ a {
   border-radius: 2px;
   cursor: pointer;
 }
-.filter-button:hover {
+.filter-from-to button:hover {
   color: #000000;
   background-color: #ffffff;
 }
@@ -808,13 +807,14 @@ input.calendar[type="text"] {
 }
 /*подвал, на обоих страницах одинаковый*/
 .main-footer {
-  min-height: 120px;
+  height: 120px;
   margin: 0;
   padding: 0;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -824,20 +824,16 @@ input.calendar[type="text"] {
   line-height: 26px;
   font-weight: bold;
 
-  width: 33%;
-  margin: 0;
-  padding: 0;
-
+  width: 33.33%;
 }
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0;
-  margin: 0 ;
-  width: 33%;
+  align-items: center;
+  width: 33.33%;
 }
-.social-media ul {
+.social-links {
   list-style: none;
 
   display: flex;
@@ -851,19 +847,20 @@ input.calendar[type="text"] {
 	padding: 0;
 }
 .social-button {
-  display: flex;
-	align-items: center;
-	justify-content: center;
+  text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-  margin-right: 6px;
+
+  display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
   height: 48px;
   width: 46px;
 }
-.social-button:last-child {
-  margin-right: 0px;
-}
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
+  color: #ffffff;
   background-color: #669ec0
 }
 .social-button:active {
@@ -873,15 +870,25 @@ input.calendar[type="text"] {
 
 .copyright {
   text-align: center;
-
-  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+.copyright-text {
+  font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+  width: 80px;
+  margin-left: 9px;
 }
 .copyright-logo {
-  text-decoration: none;
-  font-size: 14px
-  color: #000000;
+  width: 115px;
+	height: 41px;
+	fill: #000000;
 }
-.copyright-logo:hover {
+.copyright-logo:hover,
+ .copyright-logo:focus {
   color: #81b3d2;
 }
 .copyright-logo:active {
