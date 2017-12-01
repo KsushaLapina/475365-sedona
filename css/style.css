@@ -546,7 +546,7 @@ a.booking-button:active {
 	cursor: pointer;
 	user-select: none;
 }
-.filter label {
+.filter-title {
   font: inherit;
 }
 .filter-input:disabled {
@@ -554,24 +554,20 @@ a.booking-button:active {
 }
 .filter-from-to {
   width: 330px;
-  margin: 0;
+  margin: 50px auto;
   margin-left: auto;
 }
-.filter-from-to legend {
-  margin: 0;
-	margin-bottom: 10px;
+.filter-from-to-title {
+  margin-bottom: 9px;
 
-  font-weight: 700;
-	font-size: 16px;
-	line-height: 21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
 .from-to {
   position: relative;
-
 	height: 36px;
-	margin: 0;
   margin-bottom: 20px;
-
   font-size: 0;
 
 	border: 2px solid #ffffff;
@@ -600,7 +596,7 @@ a.booking-button:active {
 }
 .from-to .from,
 .from-to .to {
-	width: 83px;
+	width: 90px;
 	padding-left: 65px;
 }
 .from-to input {
@@ -611,6 +607,7 @@ a.booking-button:active {
 	font: inherit;
 
 	border: none;
+  background: none;
 }
 .range-controls {
 	position: relative;
@@ -656,17 +653,16 @@ a.booking-button:active {
 }
 
 .filter-from-to button {
-  padding: 5px 35px;
-
-  font: inherit;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-
   display: block;
   margin: 0 auto;
+  padding: 5px 35px;
 
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  background-color: transparent;
   border-radius: 2px;
   cursor: pointer;
 }
